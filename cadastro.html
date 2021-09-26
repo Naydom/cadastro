@@ -1,87 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+    <link rel="stylesheet" href="estilo.css">
     <script src="./script.js"></script>
 </head>
 
 <body>
     <div>
-        <h1>Cadastre-se</h1>
+        <h1>Projeto Gama - Cadastre-se</h1>
         <p>Complete suas informações:</p>
         <br>
     </div>
 
-    <form>
-        <fieldset>
+    <form action="confirmacao.html" class="formulario">
             <div>
-                <label>Nome:</label>
-                <input type="text" name="nome" id="nome" required>
+                <label class="perguntas">Nome:</label>
+                <input class= "respostas" type="text" name="nome" id="nome" required>
             </div>
 
 
             <div>
-                <label>CPF:</label>
-                <input type="text" name="cpf" id="cpf" required>
-                <label>RG:</label>
-                <input type="text" name="rg" id="rg" required>
+                <label class="perguntas">CPF:</label>
+                <input class= "cpf" type="text" placeholder="Digite apenas números (sem pontos ou traço)" name="cpf" id="cpf" required>
+                <label class="perguntas">RG:</label>
+                <input class= "rg" type="text" name="rg" id="rg" required>
             </div>
 
             <div>
-                <label>Sexo:</label>
+                <label class="perguntas">Sexo:</label>
                 <select name="sexo" id="sexo" required>
-                    <option selected disabled value="">Selecione</option>
+                    <option class= "respostas" selected disabled value="">Selecione</option>
                     <option>Feminino</option>
                     <option>Masculino</option>
                 </select>
             </div>
 
             <div>
-                <label>Endereço:</label>
-                <input type="text" name="endereco" id="endereco" required>
-                <label>número</label>
-                <input type="text" name="numero" id="numero" required>
+                <label class="perguntas">Endereço:</label>
+                <input class= "endereco" type="text" name="endereco" id="endereco" required>
+
+                <label class="perguntas">Número:</label>
+                <input class= "numero" type="text" name="numero" id="numero" required>
             </div>
 
             <div>
-                <label>Bairro:</label>
-                <input type="text" name="bairro" id="bairro">
-                <label>Cidade:</label>
-                <input type="text" name="cidade" id="cidade">
+                <label class="perguntas">Bairro:</label>
+                <input class= "bairro" type="text" name="bairro" id="bairro">
+                <label class="perguntas">Cidade:</label>
+                <input class= "cidade" type="text" name="cidade" id="cidade">
             </div>
 
             <div>
-                <label>Estado:</label>
-                <input type="text" name="estado" id="bairro">
-                <label>CEP:</label>
-                <input type="text" name="cep" id="cidade">
+                <label class="perguntas">Estado:</label>
+                <input class= "estado" type="text" name="estado" id="bairro">
+                <label class="perguntas">CEP:</label>
+                <input class= "cep" type="text" name="cep" id="cidade">
             </div>
 
             <div>
-                <label>Telefone fixo:</label>
-                <input type="text" name="telefone" id="telefone">
-                <label>Celular:</label>
-                <input type="text" name="celular" id="celular">
+                <label class="perguntas">Telefone fixo:</label>
+                <input class= "telefone" type="text" name="telefone" id="telefone">
+                <label class="perguntas">Celular:</label>
+                <input class= "celular" type="text" name="celular" id="celular">
             </div>
 
-            <button type="button" onclick="return validacao();">Enviar</button>
-
-
-        </fieldset>
+            <input class="submit" type="submit" onsubmit="return validacao();" value="Enviar">
 
     </form>
-
-    <div id="sucesso">
-
-    </div>
-
-
 </body>
-
-
 
 </html>

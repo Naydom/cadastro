@@ -1,0 +1,72 @@
+body{
+    background-color: #ffcc80;
+}
+
+h1{
+    margin-left: 30px;
+    text-align: center;
+}
+
+p{
+    margin-left: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.formulario{
+    margin-left: 30%;
+}
+
+.perguntas{
+    font-weight:bold;
+    display: block;
+}
+
+.respostas{
+    background-color: white;
+    width:60%;
+}
+
+.cpf{
+    width: 40%;
+}
+
+.rg{
+    width:40%;
+}
+
+.endereco{
+    width: 60%;
+}
+
+.numero{
+    width: 10%;
+}
+
+.bairro{
+    width: 40%;
+}
+
+.cidade{
+    width: 30%;
+}
+
+.estado{
+    width: 10%;
+}
+
+.telefone{
+    width: 20%;
+}
+
+.celular{
+    width: 20%;
+}
+
+.submit{
+    margin-left: 230px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}

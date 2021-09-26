@@ -1,5 +1,5 @@
 Projeto Gama - Fase 2 - Desafio individual - Nayara Domingos
 
-- Cadastro com os campos: Nome, Cpf, Endereco, Numero, Telefone Celular são obrigatórios;
+- Cadastro com os campos: Nome, Cpf, Endereço, Número e Telefone Celular obrigatórios, portanto o formulário exibe um alerta caso um desses campos fique em branco.
 
-- Exibir alerta ao enviar o fomulário.
+- Além disso, é feita a validação do CPF e dos dois últimos dígitos. O CPF precisa ser preenchido com 11 digitos (sem pontos ou traço, apenas números).
